@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: #4a4a3f;
+  background-color: #fdfcf9;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* --- IMAGENES --- */
+.hero img,
+.footer-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.content {
+  text-align: center;
+  padding: 2rem 1.5rem 0;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: #6b6b5b;
+  margin-bottom: 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #4a4a3f;
+  margin-bottom: 1rem;
+}
+
+.rings {
+  width: 60px;
+  margin-bottom: 2rem;
+}
+
+/* --- DETALLES DEL EVENTO --- */
+.details {
+  text-align: center;
+  padding: 1rem 1.5rem 2rem;
+}
+
+.details .date {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.details .hour {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 60%;
+  height: 1px;
+  background-color: #dcd7c9;
+  margin: 1.5rem auto;
+}
+
+.details h3 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #6b6b5b;
+  margin-bottom: 1rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.countdown small {
+  font-size: 0.8rem;
+  color: #6b6b5b;
+}
+
+.details h4 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 1rem 0 0.5rem;
+}
+
+.address {
+  font-size: 0.95rem;
+  color: #6b6b5b;
+}
+
+.map-container {
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* --- BOTÓN --- */
+.rsvp-button {
+  display: inline-block;
+  background-color: #a7a67e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.rsvp-button:hover {
+  background-color: #8d8c66;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+  .content, .details {
+    padding: 1.5rem 1rem;
+  }
+  .countdown span {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* === GALERÍA === */
+.gallery {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f7f2 !important;
+
+}
+
+/* Contenedor fade */
+.carousel-fade {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #f9f7f2 !important;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Botones */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+/* Puntos */
+.dots {
+  margin-top: 15px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dots .active {
+  background: #555;
+}
+
+
+
+
+
+/*CONFIRMAR ASISTENCIA*/
+
+/* === FORMULARIO RSVP === */
+.rsvp-form {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: #f9f7f2;
+  font-family: "Cormorant Garamond", serif;
+  color: #4a4a3f;
+}
+
+.rsvp-form h3 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.rsvp-form .question {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.rsvp-form .options {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.rsvp-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rsvp-form label {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.rsvp-form input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.send-button {
+  background-color: #a7a67e;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.send-button:hover {
+  background-color: #8d8c66;
+}
+
+
+
+
+
+/* === LIBRO DE FIRMAS === */
+.guestbook {
+  background-color: #8a8764;
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.guestbook h3 {
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.guestbook .subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #f0f0e6;
+}
+
+.guestbook .form-group {
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 400px;
+}
+
+.guestbook label {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.guestbook input,
+.guestbook textarea {
+  width: 100%;
+  padding: 0.7rem;
+  background: #f4f4f0;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.send-buttonconf {
+  background-color: #f9f7f2;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;  
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.buttonconf:hover {
+  background-color: #8d8c66;
+}
+
+
+
+.rsvp-buttonliv {
+  display: block;
+  width: 300px;  /* tamaño más pequeño */
+  height: auto;
+  margin: 0 auto;
+  background-color: #f9f7f2;
+  
+}
+
+
+
+.map-container {
+  width: 100%;
+  height: 250px; /* puedes ajustar la altura del mapa */
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
