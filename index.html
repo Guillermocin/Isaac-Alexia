@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac & Alexia - ¡Nos Casamos!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Imagen principal -->
+    <div class="hero">
+      <img src="inicio.jpg" alt="Isaac y Alexia" />
+    </div>
+
+    <!-- Texto de invitación -->
+     <div class="footer-image">
+      <img src="imagen/nos casamos.PNG" alt="Isaac y Alexia caminando" />
+    </div>
+
+    <!-- Detalles del evento -->
+    <div style="background-color:#f9f7f2"; class="details">
+
+      <div class="divider"></div>
+
+      <h3>CUENTA REGRESIVA</h3>
+      <div class="countdown">
+        <div><span id="days">00</span><small>DÍAS</small></div>
+        <div><span id="hours">00</span><small>HRS</small></div>
+        <div><span id="minutes">00</span><small>MIN</small></div>
+        <div><span id="seconds">00</span><small>SEG</small></div>
+      </div>
+
+      <div class="divider"></div>
+
+       <div class="footer-image">
+      <img src="imagen/lugar.PNG" alt="Isaac y Alexia caminando" />
+    </div>
+
+      <!-- Mapa -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps?q=Quinta%20Grisel%20Los%20Mochis&output=embed" 
+          width="100%" height="200" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+      <br>
+
+      <!-- Botón confirmar -->
+      <div style="text-align:center; width:100%; background-color: #f9f7f2;">
+  <a href="#confirmar-asistencia"
+     style="background-color:#f9f7f2; text-decoration:none; border-radius:8px; display:inline-block; padding:10px;">
+    <img src="ICONOS/CONFIRMAR ASISTENCIA.png" class="rsvp-buttonliv" alt="Mesa de regalos Liverpool">
+  </a>
+</div>
+    </div>
+
+    <!-- Imagen final -->
+    <div class="footer-image">
+      <img src="playa22.jpg" alt="Isaac y Alexia caminando" />
+      <img src="imagen/itinerario.PNG" alt="Isaac y Alexia caminando" />
+    </div>
+
+  
+
+<div class="footer-image">
+      <img src="imagen/regalo.PNG" alt="Isaac y Alexia caminando" />
+    
+    </div>
+
+
+  <div style="text-align:center; width:100%; background-color: #f9f7f2;">
+  <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51665139"
+     style="background-color:#f9f7f2; text-decoration:none; border-radius:8px; display:inline-block; padding:10px;">
+    <img src="ICONOS/BOTÓN LIVERPOOL.png" class="rsvp-buttonliv" alt="Mesa de regalos Liverpool">
+  </a>
+</div>
+
+   
+
+ <div class="footer-image">
+      <img src="imagen/transferencia.PNG" alt="Isaac y Alexia caminando" />
+    </div>
+<section class="gallery">
+
+ 
+  
+  
+  <div style="background-color: #f9f7f2;" class="carousel-fade"> 
+    <div class="slide fade active"><img src="carrete/CARRETE1.jpg" alt="Imagen 1" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE2.jpg" alt="Imagen 2" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE3.jpg" alt="Imagen 3" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE4.jpg" alt="Imagen 4" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE5.jpg" alt="Imagen 5" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE6.jpg" alt="Imagen 6" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE7.jpg" alt="Imagen 7" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE8.jpg" alt="Imagen 8" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE9.jpg" alt="Imagen 9" /></div>
+    <div class="slide fade"><img src="carrete/CARRETE10.jpg" alt="Imagen 10" /></div>
+
+    <!-- Botones -->
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </div>
+
+  <div class="dots"></div>
+</section>
+
+ <section id="confirmar-asistencia" class="rsvp-form">
+  <h3>CONFIRMA<br>TU ASISTENCIA</h3>
+
+  <p class="question">¿ASISTIRÁS?</p>
+  <div class="options">
+    <label><input type="radio" name="asistencia" value="Sí"> SI</label><br>
+    <label><input type="radio" name="asistencia" value="No"> NO</label>
+  </div>
+
+  <div class="form-group">
+    <label>TU NOMBRE:</label>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre aquí">
+  </div>
+
+  <div class="form-group">
+    <label>NOMBRE DE TU ACOMPAÑANTE:</label>
+    <input type="text" name="acompanante" placeholder="Opcional">
+  </div>
+
+<img src="ICONOS/CONFIRMAR (1).png" 
+     alt="Confirmar asistencia" 
+     style="width:200px; cursor:pointer;"
+     onclick="enviarWhatsApp()">
+
+</section>
+
+
+   <div class="footer-image">
+      <img src="imagen/FOOTER.PNG" alt="Isaac y Alexia caminando" />
+    </div>
+
+    <section class="guestbook">
+  <h3>LIBRO DE FIRMAS</h3>
+  <p class="subtitle">Dedicános unas lindas palabras</p>
+
+  <div class="form-group">
+    <label>Nombre(s):</label>
+    <input type="text" name="firma_nombre" placeholder="Coloca tu nombre*" />
+  </div>
+
+  <div class="form-group">
+    <label>Tus Palabras:</label>
+    <textarea name="firma_mensaje" placeholder="Escribe aquí*" rows="4"></textarea>
+  </div>
+
+  <img src="ICONOS/ENVIAR.png" 
+     alt="Confirmar asistencia" 
+     style="width:200px; cursor:pointer;"
+     onclick="enviarFirma()">
+</section>
+
+
+</div>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
