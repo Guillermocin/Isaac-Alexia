@@ -159,10 +159,10 @@ toggleBtn.addEventListener('click', () => {
   const icon = document.getElementById('musicIcon');
   if (audio.paused) {
     audio.play();
-    icon.textContent = '❚❚'; // pausa
+    icon.className = 'fa fa-pause';
   } else {
     audio.pause();
-    icon.textContent = '▶'; // play
+    icon.className = 'fa fa-play';
   }
 });
 
