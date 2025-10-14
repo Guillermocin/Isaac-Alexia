@@ -158,7 +158,7 @@ const audio = document.getElementById('bg-music');
   toggleBtn.addEventListener('click', () => {
     if (audio.paused) {
       audio.play();
-      toggleBtn.textContent = '⏸';
+      toggleBtn.textContent = '❚❚';
     } else {
       audio.pause();
       toggleBtn.textContent = '▶';
