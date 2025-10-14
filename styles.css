@@ -72,31 +72,46 @@ body {
 }
 
 .details h3 {
-  font-size: 1rem;
-  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
   color: #6b6b5b;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 2rem;
+  font-family: 'Garamond', serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum';
 }
 
+/* Cada bloque de tiempo */
 .countdown div {
   text-align: center;
 }
 
+/* Números grandes */
 .countdown span {
   display: block;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #807d65;
+  line-height: 1;
 }
 
+/* Etiquetas (DÍAS, HRS...) */
 .countdown small {
-  font-size: 0.8rem;
-  color: #6b6b5b;
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: #9a9887;
+  text-transform: uppercase;
 }
 
 .details h4 {
@@ -147,7 +162,7 @@ body {
 /* === GALERÍA === */
 .gallery {
   text-align: center;
-  padding: 2rem 1rem;
+
   background-color: #f9f7f2 !important;
 
 }
@@ -296,20 +311,24 @@ body {
 
 /* === LIBRO DE FIRMAS === */
 .guestbook {
-  background-color: #8a8764;
+  background-color: #807d65;
   color: #fff;
   padding: 2.5rem 1.5rem;
   border-radius: 8px;
   text-align: center;
-  margin: 2rem auto;
   max-width: 600px;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+   font-family: "Libre Baskerville", Georgia, serif;
 }
 
 .guestbook h3 {
-  letter-spacing: 4px;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-weight: 5;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+   
 }
 
 .guestbook .subtitle {
@@ -362,10 +381,10 @@ body {
 
 .rsvp-buttonliv {
   display: block;
-  width: 300px;  /* tamaño más pequeño */
+  width: 350px;  /* tamaño más pequeño */
   height: auto;
   margin: 0 auto;
-  background-color: #f9f7f2;
+  background-color: #fcf8f3;
   
 }
 
