@@ -163,7 +163,7 @@ body {
 .gallery {
   text-align: center;
 
-  background-color: #f9f7f2 !important;
+  background-color: #fcf8f3 !important;
 
 }
 
@@ -174,7 +174,7 @@ body {
   height: 400px;
   margin: auto;
   overflow: hidden;
-  background-color: #f9f7f2 !important;
+  background-color: #fcf8f3 !important;
 }
 
 .slide {
@@ -243,7 +243,7 @@ body {
 .rsvp-form {
   text-align: center;
   padding: 3rem 1.5rem;
-  background-color: #f9f7f2;
+  background-color: #fcf8f3;
   font-family: "Cormorant Garamond", serif;
   color: #4a4a3f;
 }
@@ -381,12 +381,19 @@ body {
 
 .rsvp-buttonliv {
   display: block;
-  width: 350px;  /* tamaño más pequeño */
+  width: 80%;
+  max-width: 350px; /* por defecto para móviles */
   height: auto;
   margin: 0 auto;
-  background-color: #fcf8f3;
-  
 }
+
+/* Para pantallas grandes */
+@media (min-width: 1024px) {
+  .rsvp-buttonliv {
+    max-width: 400px;
+  }
+}
+
 
 
 
