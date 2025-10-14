@@ -155,15 +155,16 @@ const audio = document.getElementById('bg-music');
   });
 
   // Alternar entre pausa y play
-  toggleBtn.addEventListener('click', () => {
-    if (audio.paused) {
-      audio.play();
-      toggleBtn.textContent = '❚❚';
-    } else {
-      audio.pause();
-      toggleBtn.textContent = '▶';
-    }
-  });
+toggleBtn.addEventListener('click', () => {
+  const icon = document.getElementById('musicIcon');
+  if (audio.paused) {
+    audio.play();
+    icon.textContent = '❚❚'; // pausa
+  } else {
+    audio.pause();
+    icon.textContent = '▶'; // play
+  }
+});
 
   // Efecto de brillo al pasar el cursor (opcional)
   toggleBtn.addEventListener('mouseover', () => {
