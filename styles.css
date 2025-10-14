@@ -274,6 +274,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 3px;
   margin-bottom: 1.5rem;
+  color: #807d65;
 }
 
 .rsvp-form .question {
@@ -336,7 +337,6 @@ body {
   background-color: #807d65;
   color: #fff;
   padding: 2.5rem 1.5rem;
-  border-radius: 8px;
   text-align: center;
   max-width: 600px;
   font-size: 1.5rem;
@@ -434,6 +434,96 @@ body {
   border: none;
   display: block;
 }
+
+/* Overlay de música */
+#music-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  text-align: center;
+}
+
+/* Botones dentro del overlay */
+#music-overlay button {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Botón específico "VER CON MÚSICA" */
+#btnWithMusic {
+  background-color: #a6ad5f;
+  color: #000;
+}
+
+/* Botón específico "VER SIN MÚSICA" */
+#btnWithoutMusic {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Botón flotante de pausa/reproducción */
+#musicToggleBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a6ad5f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 1.3rem;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.site-footer {
+  color: #f2ece7;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.5rem; /* tamaño base */
+  padding: 10px 0;
+}
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  .site-footer {
+    font-size: 0.5rem;  /* un poco más grande para móviles */
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .site-footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Para pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+  .site-footer {
+    font-size: 0.6rem;
+  }
+}
+
+
+
 
 
 

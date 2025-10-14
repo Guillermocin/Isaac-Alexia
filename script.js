@@ -135,6 +135,45 @@ function enviarFirma() {
 window.enviarFirma = enviarFirma;
 
 
+const audio = document.getElementById('bg-music');
+  const overlay = document.getElementById('music-overlay');
+  const btnWithMusic = document.getElementById('btnWithMusic');
+  const btnWithoutMusic = document.getElementById('btnWithoutMusic');
+  const toggleBtn = document.getElementById('musicToggleBtn');
+
+  audio.volume = 0.5; // volumen suave
+
+  btnWithMusic.addEventListener('click', () => {
+    audio.play().catch(() => {});
+    overlay.style.display = 'none';
+    toggleBtn.style.display = 'block';
+  });
+
+  btnWithoutMusic.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    toggleBtn.style.display = 'none';
+  });
+
+  // Alternar entre pausa y play
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.textContent = '⏸';
+    } else {
+      audio.pause();
+      toggleBtn.textContent = '▶';
+    }
+  });
+
+  // Efecto de brillo al pasar el cursor (opcional)
+  toggleBtn.addEventListener('mouseover', () => {
+    toggleBtn.style.boxShadow = '0 4px 15px rgba(0,0,0,0.35)';
+  });
+  toggleBtn.addEventListener('mouseout', () => {
+    toggleBtn.style.boxShadow = '0 4px 10px rgba(0,0,0,0.2)';
+  });
+
+
 
 
 

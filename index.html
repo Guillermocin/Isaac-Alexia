@@ -6,21 +6,30 @@
   <title>Isaac & Alexia - ¡Nos Casamos!</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<audio id="bg-music" autoplay loop>
+  <source src="music/music.mp3" type="audio/mpeg">
+  Tu navegador no soporta el audio.
+</audio>
+
+<div id="music-overlay">
+  <button id="btnWithMusic">VER CON MÚSICA</button>
+  <button id="btnWithoutMusic">VER SIN MÚSICA</button>
+</div>
+
+<button id="musicToggleBtn">⏸</button>
+
 <body>
 
   <div class="container">
 
-    <!-- Imagen principal -->
     <div class="hero">
       <img src="inicio.jpg" alt="Isaac y Alexia" />
     </div>
 
-    <!-- Texto de invitación -->
      <div class="footer-image">
       <img src="imagen/nos casamos.jpg" alt="Isaac y Alexia caminando" />
     </div>
 
-    <!-- Detalles del evento -->
     <div style="background-color:#fcf8f3"; class="details">
 
       <div class="divider"></div>
@@ -39,7 +48,6 @@
       <img src="imagen/lugar.jpg" alt="Isaac y Alexia caminando" />
     </div>
 
-      <!-- Mapa -->
       <div class="map-container">
         <iframe 
           src="https://www.google.com/maps?q=Quinta%20Grisel%20Los%20Mochis&output=embed" 
@@ -48,16 +56,8 @@
       </div>
       <br>
 
-      <!-- Botón confirmar 
-      <div style="text-align:center; width:100%; background-color: #f9f7f2;">
-  <a href="#confirmar-asistencia"
-     style="background-color:#f9f7f2; text-decoration:none; border-radius:8px; display:inline-block; padding:10px;">
-    <img src="ICONOS/CONFIRMAR ASISTENCIA.png" class="rsvp-buttonliv" alt="Mesa de regalos Liverpool">
-  </a>
-</div>-->
     </div>
 
-    <!-- Imagen final -->
     <div class="footer-image">
       <img src="playa22.jpg" alt="Isaac y Alexia caminando" />
       <img src="imagen/itinerario.jpg" alt="Isaac y Alexia caminando" />
@@ -72,7 +72,7 @@
 
 
   <div style="text-align:center; width:100%; background-color: #fcf8f3;">
-  <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51665139"
+  <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51665139" target="_blank"
      style="background-color:#fcf8f3; text-decoration:none; border-radius:8px; display:inline-block; padding:10px;">
     <img src="ICONOS/BOTÓN LIVERPOOL.png" class="rsvp-buttonliv" alt="Mesa de regalos Liverpool">
   </a> 
@@ -85,9 +85,6 @@
     </div>
 <section class="gallery">
 
- 
-  
-  
   <div style="background-color: #fcf8f3;" class="carousel-fade"> 
     <div class="slide fade active"><img src="carrete/CARRETE1.jpg" alt="Imagen 1" /></div>
     <div class="slide fade"><img src="carrete/CARRETE2.jpg" alt="Imagen 2" /></div>
@@ -100,7 +97,6 @@
     <div class="slide fade"><img src="carrete/CARRETE9.jpg" alt="Imagen 9" /></div>
     <div class="slide fade"><img src="carrete/CARRETE10.jpg" alt="Imagen 10" /></div>
 
-    <!-- Botones -->
     <button class="prev">❮</button>
     <button class="next">❯</button>
   </div>
@@ -160,7 +156,14 @@
      style="width:200px; cursor:pointer;"
      onclick="enviarFirma()">
      -->
+  
+     <!-- 
+ <footer class="site-footer" onclick="window.open('https://www.linkedin.com/in/guillermo-cintron-1123a2206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app','_blank')" style="cursor:pointer;">
+  <p>Developed by Guillermo Cintron</p>
+</footer>
+-->
 </section>
+
 
 
 </div>
