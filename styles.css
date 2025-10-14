@@ -73,7 +73,7 @@ body {
 
 .details h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;       /* un poco más grande por defecto */
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #6b6b5b;
@@ -81,6 +81,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* Contenedor countdown */
 .countdown {
   display: flex;
   justify-content: center;
@@ -88,6 +89,7 @@ body {
   font-family: 'Garamond', serif;
   font-variant-numeric: lining-nums;
   font-feature-settings: 'lnum';
+  flex-wrap: wrap;          /* para que no se desborde en móviles */
 }
 
 /* Cada bloque de tiempo */
@@ -98,7 +100,7 @@ body {
 /* Números grandes */
 .countdown span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 4.5rem;       /* desktop */
   font-weight: 800;
   color: #807d65;
   line-height: 1;
@@ -112,6 +114,26 @@ body {
   letter-spacing: 0.25em;
   color: #9a9887;
   text-transform: uppercase;
+}
+
+/* Ajustes para pantallas pequeñas (celular) */
+@media (max-width: 600px) {
+  .details h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+
+  .countdown {
+    gap: 1rem;
+  }
+
+  .countdown span {
+    font-size: 12vw;        /* números más grandes en celular, proporcionales al ancho */
+  }
+
+  .countdown small {
+    font-size: 0.80rem;    /* etiquetas un poco más pequeñas */
+  }
 }
 
 .details h4 {
